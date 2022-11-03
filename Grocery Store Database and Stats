@@ -1,0 +1,23 @@
+create table grocery_store(id integer primary key, item text, quantity integer, sold integer, price integer);
+insert into grocery_store values(1, "banana", 22, 8, 0.98);
+insert into grocery_store values(2, "bread", 37, 16, 4.98);
+insert into grocery_store values(3, "chicken tenderloin", 32, 9, 6.99);
+insert into grocery_store values(4, "cucumbers", 34, 8, 1.19);
+insert into grocery_store values(5, "red apples", 33, 12, 1.56);
+insert into grocery_store values(6, "tortillas", 45, 15, 3.49);
+insert into grocery_store values(7, "jasmine rice", 38, 12, 2.98);
+insert into grocery_store values(8, "greek yogurt", 26, 11, 3.68);
+insert into grocery_store values(9, "peanut butter", 28, 14, 4.78);
+insert into grocery_store values(10, "oat milk", 16, 4, 5.13);
+insert into grocery_store values(11, "ground beef", 26, 12, 7.98);
+insert into grocery_store values(12, "salsa", 22, 10, 4.98);
+insert into grocery_store values(13, "popsicles", 21, 3, 5.99);
+insert into grocery_store values(14, "sweet potatoes", 56, 27, 1.19);
+insert into grocery_store values(15, "candy bars", 46, 24, 2.17);
+SELECT * FROM grocery_store
+order by price desc;
+
+SELECT * From grocery_store
+where sold >10;
+
+SELECT MAX(price) FROM grocery_store
